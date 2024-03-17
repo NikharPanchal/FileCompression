@@ -1,1 +1,53 @@
-<h1>This is a demo of filecompression</h1>
+<header>
+  <img src="logo.png" alt="Website Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <div class="title">
+    <div class="file-convert-txt">File Converter</div>
+    <div class="desc">Convert your file to any format</div>
+  </div>
+  <div class="input-area">
+    <form class="form-container" (submit)="onSubmit($event)" enctype="multipart/form-data">
+      <div class="drop_box">
+        <div>
+          <h4>Select File here</h4>
+        </div>
+        <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+        <input type="file" name="file" (change)="onFileChange($event)">
+      </div>
+      <input type="submit" class="btn" value="Upload">
+      <button class="btn" (click)="downloadFile()">Download</button>
+    </form>
+  </div>
+  <div class="card-area">
+    <div class="card">
+      <!-- <div class="label-img">
+        <img src="pdf.png" alt="PDF">
+      </div> -->
+      <div class="card-body">
+        <h2>300+ formats supported</h2>
+        <p>We support more than 25600 different convertions between more than 300 different formats file formats. More than any other convertor</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>Fast and easy</h2>
+        <p>Just drop you files on the page. choose an output format and click "Convert" button. Wait a lttle for the processs complete. WE aim to do all our conversion in under102 minutes</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>In the Cloud</h2>
+        <p>All convertions take place in the cloud and will not condume anu capacity from your computer</p>
+      </div>
+    </div>
+  </div>
+</div>
